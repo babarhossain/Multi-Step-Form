@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background: #010438;
+    
+}
+
+.container{
+    width: 360px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    margin: 10% auto;
+    overflow: hidden;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 1s;
+}
+
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form button{
+    width: 110px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #00d4ff, #0c0ce9, #030044  );
+    border: 0;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+
+#social{
+    left: 450px;
+}
+
+#account{
+    left: 450px;
+}
+
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+
+.step-col{
+    width: 120px;
+    text-align: center;
+    position: relative;
+    color: rgb(199, 197, 197);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+#progress{
+    position: absolute;
+    width: 120px;
+    height: 10%;
+    background: linear-gradient(to right, #00d4ff, #0c0ce9, #030044  );
+    transition: 1s;
+
+}
+
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #030044 ;
+}
